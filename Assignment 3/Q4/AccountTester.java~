@@ -1,0 +1,68 @@
+//
+//2 accounts ;min balance;SI after 5 years
+
+class Account
+{
+        private double accountBalance;
+        private unsigned int time;                       //In months
+        
+        public void setAccountBalance(double accountBalance)
+        {
+                if(accountBalance<1000.0)
+                        System.out.println("Minimum Account Balance must be atleat Rs.1000! ");
+                        
+                else    this.accountBalance = accountBalance
+        }
+        
+        public void setTime(int time) { this.time = time; }
+        
+        public double getAccountBalance() { return accountBalance; }
+        public int getTime() { return time; }
+}
+
+class SavingsAccount extends Account
+{
+        private static double annualInterestRate;
+        
+        public static setAnnualInterestRate(double rate) 
+        {
+                annualInterestRate = rate;
+        }        
+}  
+
+class CurrentAccount extends Account
+{
+        private static double annualInterestRate;
+        
+        public static setAnnualInterestRate(double rate) 
+        {
+                annualInterestRate = rate;
+        }        
+}      
+
+public class AccountTester
+{
+        public static void main(String[] args)
+        {
+                Scanner stdin = new Scanner(System.in);
+                
+                System.out.println("\n Welcome to Account Management System \n");
+                System.out.println("1. Savings Account");
+                System.out.println("2. Current Account");
+                System.out.println("Enter your choice: ");
+                int choice = stdin.nextInt();
+                
+                if(choice.equals(1))
+                {
+                        SavingsAccount 
+                     
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                         
